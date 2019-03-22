@@ -1,0 +1,85 @@
+/*表格最小宽度*/
+  	.main_table >thead th:nth-of-type(1) { min-width: 60px; width: 60px; } /*ID*/
+	.main_table >thead th:nth-of-type(2) { min-width: 120px; } /*标题*/
+	.main_table >thead th:nth-of-type(3) { min-width: 120px; } /*价格*/
+	.main_table >thead th:nth-of-type(3) { min-width: 120px; } /*差旅费*/
+	.main_table >thead th:nth-of-type(4) { min-width: 100px; } /*次序*/
+/*城市选择*/
+	.opCfCity_table >thead th:nth-of-type(1) { min-width: 60px; width: 60px; } /*ID*/
+	.opCfCity_table >thead th:nth-of-type(2) { min-width: 120px; } /*省份*/
+	.opCfCity_table >thead th:nth-of-type(3) { min-width: 120px; } /*城市*/
+	.opCfCity_table >thead th:nth-of-type(4) { min-width: 120px; } /*价格*/
+	.opCfCity_table >thead th:nth-of-type(5) { min-width: 120px; } /*启用差旅费*/
+	.opCfCity_table >thead th:nth-of-type(6) { min-width: 100px; } /*次序*/
+
+/*用户列表*/
+	.user_table >thead th:nth-of-type(1) { min-width: 60px; width: 60px; } /*ID*/
+	.user_table >thead th:nth-of-type(2) { min-width: 110px; } /*姓名*/
+	.user_table >thead th:nth-of-type(3) { min-width: 110px; } /*手机号*/
+	.user_table >thead th:nth-of-type(4) { min-width: 100px; } /*公司*/
+	.user_table >thead th:nth-of-type(5) { min-width: 120px; } /*注册IP*/
+	.user_table >thead th:nth-of-type(6) { min-width: 90px; } /*注册时间*/
+	.user_table >thead th:nth-of-type(7) { min-width: 120px; } /*登陆IP*/
+	.user_table >thead th:nth-of-type(8) { min-width: 90px; } /*登陆时间*/
+
+	.userD_email a{
+		color: #056839; 
+		cursor: pointer;
+	}
+
+/*订单设置*/
+	.opSetting_table >thead th:nth-of-type(1) { width: 150px; min-width: initial; }
+	.opSetting_table >thead th:nth-of-type(3) { width: 100px; min-width: initial; }
+	.opSettingDelTd{
+		height: 26px; 
+		line-height: 24px; 
+		padding:0 9px; 
+		text-align: center;
+		border-radius: 4px;
+		color: #056839;
+		border: 1px solid #056839;
+	}
+	.opSettingDelTd:hover{ color: #fff; background-color: #056839; }
+
+/*订单列表*/
+	.omList_table >thead th:nth-of-type(1) { min-width: 60px; width: 60px; } /*ID*/
+	.omList_table >thead th:nth-of-type(2) { min-width: 150px; } /*订单号*/
+	.omList_table >thead th:nth-of-type(3) { min-width: 60px; } /*用户ID*/
+	.omList_table >thead th:nth-of-type(4) { min-width: 80px; } /*公司*/
+
+	.omList_table >thead th:nth-of-type(5) { min-width: 80px; } /*状态*/
+	.omList_table >thead th:nth-of-type(6) { min-width: 100px; } /*订单时间*/
+	.omList_table >thead th:nth-of-type(7) { min-width: 150px; } /*交易号*/
+	.omList_table >thead th:nth-of-type(8) { min-width: 110px; } /*交易金额(元)*/
+	.omList_table >thead th:nth-of-type(9) { min-width: 100px; } /*交易时间*/
+
+	/*.omList_table .omTableState{ color: #fff; min-width: 60px; text-align: center; }*/
+	#omListEditForm .layer_p ul li{ line-height: initial; line-height: 30px; }
+	#omListEditForm .layer_p ul li input[type=radio],
+	#omListEditForm .layer_p ul li input[type=checkbox]{ width: initial; margin-right: 0;}
+	#omListEditForm .layer_p ul li label{ font-weight: 400; margin-bottom: 0; cursor: pointer;}
+	.omListEditCity select{ min-width: 100px; cursor: pointer; }
+
+	#omListEditForm .omListEditDesign ul li,
+	#omListEditForm .omListEditLicense ul li,
+	#omListEditForm .omListEditAuth ul li,
+	#omListEditForm .omListEditInvoice ul li,
+	#omListEditForm .omListEditVisit ul li,
+	#omListEditForm .omListEditTravelPrice ul li{
+		line-height: 47px;
+	}
+	.omList_detail .main_detail_btn button{ display: none; }
+
+
+
+/*系统设置*/
+	.opSymSetting_table >thead th:nth-of-type(1) { width: 150px; min-width: initial; }
+	/*.opSymSetting_table >thead th:nth-of-type(3) { width: 100px; min-width: initial; }*/
+
+.opCfProjectAddTravelPrice label,
+.opCfProjectEditTravelPrice label,
+.opCfCityAddTravelPrice label,
+.opCfCityEditTravelPrice label{
+	min-width: 50px;
+	padding-left: 5px;
+}

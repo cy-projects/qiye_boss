@@ -1,0 +1,1071 @@
+<!-- 修改密码 -->
+	<form action="" class="popupForm" id="changePwd_submit">
+		<div class="row layer_p">
+			<label class="col-sm-2">旧密码</label>
+			<div class="col-sm-10">
+				<input  id="changePwdOld" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">新密码</label>
+			<div class="col-sm-10">
+				<input  id="changePwdNew1" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">确认密码</label>
+			<div class="col-sm-10">
+				<input  id="changePwdNew2" type="password" placeholder="最多输入20个字符" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="changePwdBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 认证项目Add -->
+	<form action="" class="popupForm" id="opCfProjectAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-3">标题</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">启用差旅费</label>
+			<div class="col-sm-9 opCfProjectAddTravelPrice layer_pCheckbox1" data-color="changeGreen">
+				<ul>
+					<li><input type="radio" name="opCfProjectAddTp" value="true"  id="opCfProjectAddTp2"><label for="opCfProjectAddTp2">是</label></li>
+					<li><input type="radio" name="opCfProjectAddTp" value="false" id="opCfProjectAddTp1"><label for="opCfProjectAddTp1">否</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">每日差旅费(元)</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectAddDayTravelPrice" type="text" placeholder="请输入每日差旅费(非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">次序</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfProjectAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 认证项目Edit -->
+	<form action="" class="popupForm" id="opCfProjectEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-3">标题</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">启用差旅费</label>
+			<div class="col-sm-9 opCfProjectEditTravelPrice	 layer_pCheckbox1" data-color="changeGreen">
+				<ul>
+					<li><input type="radio" name="opCfProjectEditTp" value="true"  id="opCfProjectEditTp2"><label for="opCfProjectEditTp2">是</label></li>
+					<li><input type="radio" name="opCfProjectEditTp" value="false" id="opCfProjectEditTp1"><label for="opCfProjectEditTp1">否</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">每日差旅费(元)</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectEditDayTravelPrice" type="text" placeholder="请输入每日差旅费(非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">次序</label>
+			<div class="col-sm-9">
+				<input  id="opCfProjectEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfProjectEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 认证项目定价 -->
+	<form action="" class="popupForm" id="opCfProjectSetpForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">项目名称</label>
+			<div class="col-sm-10" id="opCfProjectSetp_title"></div>
+		</div>
+		<hr>
+		
+		<div class="row layer_p opCfProjectSetp_person"></div>
+		<div class="row layer_p opCfProjectSetp_time"></div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfProjectSetpSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 企业认证人数Add -->
+	<form action="" class="popupForm" id="opCfPeoNumAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumAddPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<!-- <div class="row layer_p">
+			<label class="col-sm-2">差旅费(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumAddTravePrice" type="text" placeholder="请输入差旅费 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div> -->
+		<div class="row layer_p">
+			<label class="col-sm-2">差旅天数</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumAddTravelDays" type="text" placeholder="请输入差旅天数 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfPeoNumAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 企业认证人数Edit -->
+	<form action="" class="popupForm" id="opCfPeoNumEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumEditPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<!-- <div class="row layer_p">
+			<label class="col-sm-2">差旅费(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumEditTravePrice" type="text" placeholder="请输入差旅费 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div> -->
+		<div class="row layer_p">
+			<label class="col-sm-2">差旅天数</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumEditTravelDays" type="text" placeholder="请输入差旅天数 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfPeoNumEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfPeoNumEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 认证机构Add -->
+	<form action="" class="popupForm" id="opCfOrgAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgAddPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfOrgAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 认证机构Edit -->
+	<form action="" class="popupForm" id="opCfOrgEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgEditPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfOrgEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfOrgEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 有无设计Add -->
+	<form action="" class="popupForm" id="opIsDesignAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignAddPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opIsDesignAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 有无设计Edit -->
+	<form action="" class="popupForm" id="opIsDesignEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignEditPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opIsDesignEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opIsDesignEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 获证时间周期Add -->
+	<form action="" class="popupForm" id="opCfCycleAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleAddPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCycleAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 获证时间周期Edit -->
+	<form action="" class="popupForm" id="opCfCycleEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleEditPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCycleEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCycleEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 法律法规文件Add -->
+	<form action="" class="popupForm" id="opcfLawAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opcfLawAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opcfLawAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opcfLawAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 法律法规文件Edit -->
+	<form action="" class="popupForm" id="opcfLawEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opcfLawEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opcfLawEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opcfLawEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 有无许可证要求Add -->
+	<form action="" class="popupForm" id="opIsLicenseAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opIsLicenseAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opIsLicenseAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opIsLicenseAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 有无许可证要求Edit -->
+	<form action="" class="popupForm" id="opIsLicenseEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opIsLicenseEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opIsLicenseEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opIsLicenseEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 城市选择Add -->
+	<form action="" class="popupForm" id="opCfCityAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">省份</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityAddProvince" type="text" placeholder="请输入省份" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">城市</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityAddCity" type="text" placeholder="请输入城市" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityAddPrice" type="text" placeholder="请输入价格" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">启用差旅费</label>
+			<div class="col-sm-10 opCfCityAddTravelPrice layer_pCheckbox1" data-color="changeGreen">
+				<ul>
+					<li><input type="radio" name="opCfCityAddTp" value="true"  id="opCfCityAddTp2"><label for="opCfCityAddTp2">是</label></li>
+					<li><input type="radio" name="opCfCityAddTp" value="false" id="opCfCityAddTp1"><label for="opCfCityAddTp1">否</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCityAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 城市选择Edit -->
+	<form action="" class="popupForm" id="opCfCityEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">省份</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityEditProvince" type="text" placeholder="请输入省份" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">城市</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityEditCity" type="text" placeholder="请输入城市" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityEditPrice" type="text" placeholder="请输入价格" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">启用差旅费</label>
+			<div class="col-sm-10 opCfCityEditTravelPrice layer_pCheckbox1" data-color="changeGreen">
+				<ul>
+					<li><input type="radio" name="opCfCityEditTp" value="true"  id="opCfCityEditTp2"><label for="opCfCityEditTp2">是</label></li>
+					<li><input type="radio" name="opCfCityEditTp" value="false" id="opCfCityEditTp1"><label for="opCfCityEditTp1">否</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCityEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCityEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 发票需求Add -->
+	<form action="" class="popupForm" id="opCfInvoiceAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">百分比(%)</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceAddPercent" type="text" placeholder="请输入价格 (非负实数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfInvoiceAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 发票需求Edit -->
+	<form action="" class="popupForm" id="opCfInvoiceEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">百分比(%)</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceEditPercent" type="text" placeholder="请输入价格 (非负实数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfInvoiceEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfInvoiceEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 配合度Add -->
+	<form action="" class="popupForm" id="opCfCooperationAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">百分比(%)</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationAddPercent" type="text" placeholder="请输入价格 (非负实数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCooperationAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 配合度Edit -->
+	<form action="" class="popupForm" id="opCfCooperationEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">百分比(%)</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationEditPercent" type="text" placeholder="请输入价格 (非负实数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opCfCooperationEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opCfCooperationEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 需上门洽谈Add -->
+	<form action="" class="popupForm" id="opVisitAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opVisitAddTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opVisitAddPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opVisitAddSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opVisitAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 需上门洽谈Edit -->
+	<form action="" class="popupForm" id="opVisitEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">标题</label>
+			<div class="col-sm-10">
+				<input  id="opVisitEditTitle" type="text" placeholder="请输入标题" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">价格(元)</label>
+			<div class="col-sm-10">
+				<input  id="opVisitEditPrice" type="text" placeholder="请输入价格 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">次序</label>
+			<div class="col-sm-10">
+				<input  id="opVisitEditSeq" type="text" placeholder="请输入次序 (非负整数)" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opVisitEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 参数说明Add -->
+	<form action="" class="popupForm" id="opDescriptionAddForm">
+		<div class="row layer_p aj_add_type">
+			<label class="col-sm-2">类型</label>
+		    <div class="col-sm-10 input-group">
+		      <input type="text" class="form-control" id="opDescriptionAddOptionType" placeholder="请选择参数类型" readonly="readonly">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default" data-value="1">
+		        	<strong class="fa fa-caret-down"></strong>
+		        </button>
+		        <ul class="dropdown-menu dropdown-menu-right">
+					<div>
+						<li><a href="javascript:void(0);" data-value="Project">认证项目</a></li>
+						<li><a href="javascript:void(0);" data-value="Person">企业认证人数</a></li>
+						<li><a href="javascript:void(0);" data-value="Auth">认证机构</a></li>
+						<li><a href="javascript:void(0);" data-value="Design">有无设计</a></li>
+						<li><a href="javascript:void(0);" data-value="Time">获证时间周期</a></li>
+						<li><a href="javascript:void(0);" data-value="Description">认证范围描述</a></li>
+						<li><a href="javascript:void(0);" data-value="Legal">法律法规文件</a></li>
+						<li><a href="javascript:void(0);" data-value="License">有无许可证要求</a></li>
+						<li><a href="javascript:void(0);" data-value="City">城市选择</a></li>
+						<li><a href="javascript:void(0);" data-value="Invoice">发票需求</a></li>
+						<li><a href="javascript:void(0);" data-value="Operate">配合度</a></li>
+						<li><a href="javascript:void(0);" data-value="Visit">需上门洽谈</a></li>
+						<li><a href="javascript:void(0);" data-value="TravelPrice">包含差旅费</a></li>
+						<li><a href="javascript:void(0);" data-value="Notes">备注</a></li>
+					</div>
+					<p class="dropdown-menu-right_sanjiao"></p>
+		        </ul>
+		      </div>
+		    </div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">说明</label>
+			<div class="col-sm-10">
+				<textarea id="opDescriptionAddNotes" cols="50" rows="5" placeholder="请输入说明" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+				<!-- <input  id="opDescriptionAddNotes" type="text" placeholder="请输入备注" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)"> -->
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opDescriptionAddSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 参数说明Edit -->
+	<form action="" class="popupForm" id="opDescriptionEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">类型</label>
+			<div class="col-sm-10 pd45" id="opDescriptionEditOptionType"></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">说明</label>
+			<div class="col-sm-10">
+				<textarea id="opDescriptionEditNotes" cols="50" rows="5" placeholder="请输入说明" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+				<!-- <input  id="opDescriptionEditNotes" type="text" placeholder="请输入参数说明" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)"> -->
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opDescriptionEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 系统设置Edit -->
+	<form action="" class="popupForm" id="opSettingEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-3 opSettingEditPercentLabel"></label>
+			<div class="col-sm-7">
+				<input  id="opSettingEditPercent" type="text" placeholder="请输入折扣数" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)">
+			</div>
+			<span>%</span>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opSettingEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 用户列表Add -->
+	<form action="" class="popupForm" id="userAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">手机</label>
+			<div class="col-sm-10">
+				<input  id="userAdd_phone" type="text" placeholder="请输入手机号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">密码</label>
+			<div class="col-sm-10">
+				<input  id="userAdd_password" type="password" placeholder="请输入密码" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)" autocomplete="off">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">姓名</label>
+			<div class="col-sm-10">
+				<input  id="userAdd_name" type="text" placeholder="请输入姓名" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司</label>
+			<div class="col-sm-10">
+				<input  id="userAdd_company" type="text" placeholder="请输入公司" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="userAddBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 用户列表Edit -->
+	<form action="" class="popupForm" id="userEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">姓名</label>
+			<div class="col-sm-10">
+				<input  id="userEdit_name" type="text" placeholder="请输入姓名" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司</label>
+			<div class="col-sm-10">
+				<input  id="userEdit_company" type="text" placeholder="请输入公司" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="userEditBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 用户列表Edit密码 -->
+	<form action="" class="popupForm" id="userPwdEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">密码</label>
+			<div class="col-sm-10">
+				<input  id="userPwdEdit_pwd" type="password" placeholder="请输入密码" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)" autocomplete="off">
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="userPwdEditBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 订单列表Edit -->
+	<form action="" class="popupForm" id="omListEditForm">
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">认证项目</label>
+			<div class="col-sm-10 omListEditProject"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">企业认证人数</label>
+			<div class="col-sm-10 omListEditPerson"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">获证时间周期</label>
+			<div class="col-sm-10 omListEditTime"><ul></ul></div>
+		</div>
+		<div class="row layer_p md32 md12">
+			<label class="col-sm-2 lh30">认证范围描述</label>
+			<div class="col-sm-10">
+				<textarea name="" id="omListEditDescription" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">城市选择</label>
+			<div class="col-sm-10 omListEditCity">
+				<ul>
+					<li>
+						<select class="prov"></select>
+						<select class="city"></select>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">有无设计</label>
+			<div class="col-sm-10 omListEditDesign"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-3">有无许可证要求</label>
+			<div class="col-sm-9 omListEditLicense"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">法律法规文件</label>
+			<div class="col-sm-10 omListEditLegal"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">认证机构选择</label>
+			<div class="col-sm-10 omListEditAuth"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">发票需要</label>
+			<div class="col-sm-10 omListEditInvoice"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">配合度</label>
+			<div class="col-sm-10 omListEditOperate"><ul></ul></div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">需上门洽谈</label>
+			<div class="col-sm-10 omListEditVisit"><ul></ul></div>
+		</div>
+		<div class="row layer_p omListEditTravelPrice_show">
+			<label class="col-sm-2">包含差旅费</label>
+			<div class="col-sm-10 omListEditTravelPrice">
+				<ul>
+					<li class="fl pd22"><input type="radio" name="omListEditTp" value="false" id="omListEditTp1"><label for="omListEditTp1">否</label></li>
+					<li class="fl pd22"><input type="radio" name="omListEditTp" value="true"  id="omListEditTp2"><label for="omListEditTp2">是</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_p md32 md12">
+			<label class="col-sm-2 lh30">备注</label>
+			<div class="col-sm-10">
+				<textarea name="" id="omListEditNotes" cols="50" rows="5" placeholder="最多输入500个字符" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="omListEditSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 订单列表SetState -->
+	<form action="" class="popupForm" id="omListSetStateForm">
+		<div class="row layer_p">
+			<label class="col-sm-2 lh30">状态</label>
+			<div class="col-sm-10 omListEdit_state pick">
+				<ul data-mode="dan">
+					<li data-value="Ready">未确认</li>
+					<li data-value="Confirmed">已确认</li>
+					<li data-value="Signed">已签合同</li>
+					<li data-value="FirstPayed">已付首款</li>
+					<li data-value="Operating">实施中</li>
+					<li data-value="FinalPayed">已付尾款</li>
+					<li data-value="Finished">已认证</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="omListSetStateSub" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+<!-- 订单列表 评价录入 -->
+	<form action="" class="popupForm" id="omListEvaluateForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">评分</label>
+			<div class="col-sm-10">
+				<input  id="addOrderEvaluate_score" class="clear-type-number" min="0" max="100" type="number" placeholder="请输入0~100的整数" onfocus="checkStrNum(this,20)" oninput="checkStrNum(this,20)" onpropertychange="checkStrNum(this,20)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">评价</label>
+			<div class="col-sm-10">
+				<textarea id="addOrderEvaluate_comment"  cols="50" rows="5" placeholder="请输入评价" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="omListEvaluateBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+
+<!-- 系统设置列表Add -->
+	<form action="" class="popupForm" id="opSymSettingAddForm">
+		<div class="row layer_p">
+			<label class="col-sm-2">公司名称</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyFullname" type="text" placeholder="请输入公司名称" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">英文名</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyEnname" type="text" placeholder="请输入公司英文名" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司简称</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyBrief" type="text" placeholder="请输入公司简称" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">公司简介</label>
+			<div class="col-sm-10">
+				<textarea id="opSymSettingAdd_companyIntro" cols="50" rows="5" placeholder="请输入公司简介" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>		
+		<div class="row layer_p" style=" margin-top: 5px; ">
+			<label class="col-sm-2">公司地址</label>
+			<div class="col-sm-10">
+				<textarea id="opSymSettingAdd_companyAddress" cols="50" rows="5" placeholder="请输入公司地址" onfocus="checkStrNum(this,500)" oninput="checkStrNum(this,500)" onpropertychange="checkStrNum(this,500)"></textarea>
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">联系人</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyContact" type="text" placeholder="请输入联系人" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">联系人电话</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyContactPhone" type="text" placeholder="请输入联系人电话" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">联系邮箱</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyContactEmail" type="text" placeholder="请输入联系邮箱" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">商务电话</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyBusinessPhone" type="text" placeholder="请输入商务电话" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">银行账户</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyBankAccount" type="text" placeholder="请输入银行账户" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">开户行</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyBankName" type="text" placeholder="请输入开户行" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">税号</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyTaxCode" type="text" placeholder="请输入税号" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">税务电话</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyTaxCodePhone" type="text" placeholder="请输入税务电话" onfocus="checkStrNum(this,50)" oninput="checkStrNum(this,50)" onpropertychange="checkStrNum(this,50)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">企业QQ</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyQQ" type="text" placeholder="请输入企业QQ" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)">
+			</div>
+		</div>
+		<div class="row layer_p">
+			<label class="col-sm-2">微信二维码</label>
+			<div class="col-sm-10">
+				<input  id="opSymSettingAdd_companyWeixinCodeUrl" type="text" placeholder="请输入微信二维码" onfocus="checkStrNum(this,200)" oninput="checkStrNum(this,200)" onpropertychange="checkStrNum(this,200)">
+			</div>
+		</div>
+
+
+		<div class="row layer_for md14">
+			<div>
+				<input class="cancelBtn" type="button" value="取消">
+				<input id="opSymSettingAddBtn" type="submit" value="提交">
+			</div>
+		</div>
+	</form>
+
+
+
+
+
+
+

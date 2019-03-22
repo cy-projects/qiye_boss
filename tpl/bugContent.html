@@ -1,0 +1,646 @@
+<!-- 系统概况页面 -->
+	<div class="bugMain_systemOutline">
+		<div class="main_title systemOutline_title">
+			<div class="mainTitle">系统概况</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table systemOutline_table">
+			<thead><tr>
+				<th><span></span></th>
+				<th><span>成交订单数</span></th>
+				<th><span>交易金额(元)</span></th>
+				<th><span>创建项目数</span></th>
+				<th><span>注册用户数</span></th>
+				<th><span>注册IP数</span></th>
+				<th><span>登录用户数</span></th>
+				<th><span>登录IP数</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+					<th>今天</th>
+					<td class="orderNumberDay"			></td>
+					<td class="orderMoneyDay"			></td>
+					<td class="projectNumberDay"		></td>
+					<td class="registerUserNumberDay"	></td>
+					<td class="registerIPNumberDay"		></td>
+					<td class="loginUserNumberDay"		></td>
+					<td class="loginIPNumberDay"		></td>
+				</tr>
+				<tr>
+					<th>昨天</th>
+					<td class="orderNumberYesterday"		></td>
+					<td class="orderMoneyYesterday"			></td>
+					<td class="projectNumberYesterday"		></td>
+					<td class="registerUserNumberYesterday"	></td>
+					<td class="registerIPNumberYesterday"	></td>
+					<td class="loginUserNumberYesterday"	></td>
+					<td class="loginIPNumberYesterday"		></td>
+				</tr>
+				<tr>
+					<th>本周</th>
+					<td class="orderNumberWeek"			></td>
+					<td class="orderMoneyWeek"			></td>
+					<td class="projectNumberWeek"		></td>
+					<td class="registerUserNumberWeek"	></td>
+					<td class="registerIPNumberWeek"	></td>
+					<td class="loginUserNumberWeek"		></td>
+					<td class="loginIPNumberWeek"		></td>
+				</tr>
+				<tr>
+					<th>上周</th>
+					<td class="orderNumberLastweek"			></td>
+					<td class="orderMoneyLastweek"			></td>
+					<td class="projectNumberLastweek"		></td>
+					<td class="registerUserNumberLastweek"	></td>
+					<td class="registerIPNumberLastweek"	></td>
+					<td class="loginUserNumberLastweek"		></td>
+					<td class="loginIPNumberLastweek"		></td>
+				</tr>
+				<tr>
+					<th>本月</th>
+					<td class="orderNumberMonth"		></td>
+					<td class="orderMoneyMonth"			></td>
+					<td class="projectNumberMonth"		></td>
+					<td class="registerUserNumberMonth"	></td>
+					<td class="registerIPNumberMonth"	></td>
+					<td class="loginUserNumberMonth"	></td>
+					<td class="loginIPNumberMonth"		></td>
+				</tr>
+				<tr>
+					<th>上月</th>
+					<td class="orderNumberLastmonth"		></td>
+					<td class="orderMoneyLastmonth"			></td>
+					<td class="projectNumberLastmonth"		></td>
+					<td class="registerUserNumberLastmonth"	></td>
+					<td class="registerIPNumberLastmonth"	></td>
+					<td class="loginUserNumberLastmonth"	></td>
+					<td class="loginIPNumberLastmonth"		></td>
+				</tr>
+				<tr>
+					<th>全部</th>
+					<td class="orderNumberAllmonth"			></td>
+					<td class="orderMoneyAllmonth"			></td>
+					<td class="projectNumberAllmonth"		></td>
+					<td class="registerUserNumberAllmonth"	></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 认证项目页面 -->
+	<div class="bugMain_opCfProject">
+		<div class="main_title opCfProject_title">
+			<div class="mainTitle">认证项目</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfProjectAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfProject_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>启用差旅费</span></th>
+				<th><span>每日差旅费(元)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 企业认证人数页面 -->
+	<div class="bugMain_opCfPeoNum">
+		<div class="main_title opCfPeoNum_title">
+			<div class="mainTitle">企业认证人数</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfPeoNumAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfPeoNum_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>价格(元)</span></th>
+				<!-- <th><span>差旅费(元)</span></th> -->
+				<th><span>差旅天数</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 认证机构页面 -->
+	<div class="bugMain_opCfOrg">
+		<div class="main_title opCfOrg_title">
+			<div class="mainTitle">认证机构</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfOrgAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页筛选 -->
+		<div class="mainFilter mainFilterOpCfOrg clearfix" style="display:none;">
+			<ul class="mainNav opCfOrg_stateNav">
+				<li class="main_dropdown opCfOrg_stateDropdown">
+					<a href="javascript:void(0);">
+						<span>状态：<strong data-value="">全部</strong></span>
+						<span class="fa fa-caret-down"></span>
+					</a>
+				</li>
+				<ul class="main_drop_menu opCfOrg_stateDropMenu">
+					<div>
+						<li><a href="javascript:void(0);" data-value=""		 >全部</a></li>
+						<li><a href="javascript:void(0);" data-value="false" >正常</a></li>
+						<li><a href="javascript:void(0);" data-value="true"  >禁止</a></li>
+					</div>
+				</ul>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="opCfOrg_id" type="text" placeholder="用户ID"/>
+					<span>
+						<button class="btn btn-danger">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfOrg_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>价格(元)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 有无设计页面 -->
+	<div class="bugMain_opIsDesign">
+		<div class="main_title opIsDesign_title">
+			<div class="mainTitle">有无设计</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opIsDesignAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opIsDesign_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>价格(元)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 获证时间周期页面 -->
+	<div class="bugMain_opCfCycle">
+		<div class="main_title opCfCycle_title">
+			<div class="mainTitle">获证时间周期</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfCycleAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfCycle_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>价格(元)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 法律法规文件页面 -->
+	<div class='bugMian_opcfLaw'>
+		<div class="main_title opcfLaw_title">
+			<div class="mainTitle">法律法规文件</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opcfLawAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opcfLaw_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 有无许可证要求页面 -->
+	<div class='bugMian_opIsLicense'>
+		<div class="main_title opIsLicense_title">
+			<div class="mainTitle">有无许可证要求</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opIsLicenseAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opIsLicense_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 城市选择页面 -->
+	<div class='bugMian_opCfCity'>
+		<div class="main_title opCfCity_title">
+			<div class="mainTitle">城市选择</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfCityAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfCity_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>省份</span></th>
+				<th><span>城市</span></th>
+				<th><span>价格</span></th>
+				<th><span>启用差旅费</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 发票需求页面 -->
+	<div class='bugMian_opCfInvoice'>
+		<div class="main_title opCfInvoice_title">
+			<div class="mainTitle">发票需求</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfInvoiceAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfInvoice_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>百分比(%)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 配合度页面 -->
+	<div class="bugMain_opCfCooperation">
+		<div class="main_title opCfCooperation_title">
+			<div class="mainTitle">配合度</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opCfCooperationAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opCfCooperation_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>百分比(%)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 需上门洽谈页面 -->
+	<div class="bugMain_opVisit">
+		<div class="main_title opVisit_title">
+			<div class="mainTitle">需上门洽谈</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opVisitAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opVisit_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>标题</span></th>
+				<th><span>价格(元)</span></th>
+				<th><span>次序</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 参数说明页面 -->
+	<div class="bugMain_opDescription">
+		<div class="main_title opDescription_title">
+			<div class="mainTitle">参数说明</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opDescriptionAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opDescription_table">
+			<thead><tr>
+				<th><span>ID</span></th>
+				<th><span>参数类型</span></th>
+				<th><span>说明</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!-- 系统设置页面 -->
+	<div class="bugMain_opSetting">
+		<div class="main_title opSetting_title">
+			<div class="mainTitle">订单设置</div>
+			<div class="mainAdd">
+				<!-- <div class="btnBg1 opSettingAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div> -->
+			</div>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table opSetting_table">
+			<thead><tr>
+				<!-- <th><span>ID</span></th> -->
+				<th><span>订单参数</span></th>
+				<th><span>数值(%)</span></th>
+				<th><span>设置</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+<!-- 用户管理页面 -->
+	<div class="bugMain_user">
+		<div class="main_title">
+			<div class="mainTitle">用户列表</div>
+			<div class="mainAdd">
+				<div class="btnBg1 userAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div>
+			</div>
+		</div>
+		<!-- 主页筛选 -->
+		<div class="mainFilter mainFilterUser clearfix">
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="user_userId" type="text" placeholder="用户ID"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="user_phone" type="text" placeholder="手机号"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="user_registerIP" type="text" placeholder="注册IP"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table user_table">
+			<thead><tr>
+				<th class="sort"><span>ID</span><i data-value="id" class="fa fa-sort"></i></th>
+				<th><span>姓名</span><strong class="allCount"></strong></th>
+				<th><span>手机</span></th>
+				<th><span>公司</span></th>
+				<th><span>注册IP</span></th>
+				<th class="sort"><span>注册时间</span><i data-value="registerTime" class="fa fa-sort"></i></th>
+				<th><span>登陆IP</span></th>
+				<th><span>登陆时间</span></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 主页分页 -->
+		<div class="main_pagination">
+			<div class="userPagination pagination"></div>
+		</div>
+	</div>
+<!-- 订单列表页面 -->
+	<div class="bugMain_omList">
+		<div class="main_title omList_title">
+			<div class="mainTitle">订单列表</div>
+			<div class="mainAdd">
+				<!-- <div class="btnBg1 omListAdd"><span><i class="fa fa-plus-circle"></i><span>新增</span></span></div> -->
+			</div>
+		</div>
+		<!-- 主页筛选 -->
+		<div class="mainFilter mainFilterOmList clearfix">
+			<ul class="mainNav">
+				<li class="main_dropdown omList_stateDropdown">
+					<a href="javascript:void(0);">
+						<span>订单状态：<strong data-value="">全部</strong></span>
+						<span class="fa fa-caret-down"></span>
+					</a>
+				</li>
+				<ul class="main_drop_menu omList_stateDropMenu">
+					<div>
+						<li><a href="javascript:void(0);" data-value=""		 	>全部</a></li>
+						<li><a href="javascript:void(0);" data-value="Draft" 	>草稿</a></li>
+						<li><a href="javascript:void(0);" data-value="Ready" 	>未确认</a></li>
+						<li><a href="javascript:void(0);" data-value="Confirmed">已确认</a></li>
+
+						<li><a href="javascript:void(0);" data-value="Signed" 		>已签合同</a></li>
+						<li><a href="javascript:void(0);" data-value="FirstPayed" 	>已付首款</a></li>
+						<li><a href="javascript:void(0);" data-value="Operating" 	>实施中</a></li>
+						<li><a href="javascript:void(0);" data-value="FinalPayed"	>已付尾款</a></li>
+
+						<li><a href="javascript:void(0);" data-value="Finished" >已认证</a></li>
+					</div>
+				</ul>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="omList_userId" type="text" placeholder="用户ID"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="omList_orderNo" type="text" placeholder="订单号"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+			<ul class="mainNav">
+				<div class="main_dropdown main_dropdownInput">
+					<input id="omList_tradeNo" type="text" placeholder="交易号"/>
+					<span>
+						<button>
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</ul>
+		</div>
+		<!-- 主页表格 -->
+		<table class="main_table omList_table">
+			<thead><tr>
+				<th class="sort"><span>ID</span><i data-value="id" class="fa fa-sort"></i></th>
+				<th><span>订单号</span><strong class="allCount"></strong></th>
+				<th><span>用户ID</span></th>
+				<th><span>公司</span></th>
+				<th class="sort"><span>状态</span><i data-value="state" class="fa fa-sort"></i></th>
+				<th class="sort"><span>订单时间</span><i data-value="orderTime" class="fa fa-sort"></i></th>
+				<th><span>交易号</span></th>
+				<th class="sort"><span>交易金额(元)</span><i data-value="fee" class="fa fa-sort"></i></th>
+				<th class="sort"><span>交易时间</span><i data-value="tradeTime" class="fa fa-sort"></i></th>
+			</tr></thead>
+			<tbody>
+				<tr>
+				</tr>
+			</tbody>
+		</table>
+		<!-- 主页分页 -->
+		<div class="main_pagination">
+			<div class="omListPagination pagination"></div>
+		</div>
+	</div>
+
+<!-- 系统设置页面 -->
+	<div class="bugMain_opSymSetting">
+		<div class="main_title omList_title">
+			<div class="mainTitle">系统设置</div>
+			<div class="mainAdd">
+				<div class="btnBg1 opSymSettingAdd"><span><i class="fa fa-edit"></i><span>设置</span></span></div>
+			</div>
+		</div>
+		<!-- 主页筛选 -->
+		<!-- 主页表格 -->
+		<table class="main_table opSymSetting_table">
+			<thead><tr>
+				<th><span>系统设置参数</span></th>
+				<th><span>值</span></th>
+			</tr></thead>
+			<tbody>
+				<tr data-value="" class="companyFullname">
+					<td><span>公司名称</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyEnname">
+					<td><span>英文名</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyBrief">
+					<td><span>公司简称</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyIntro">
+					<td><span>公司简介</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyAddress">
+					<td><span>公司地址</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyContact">
+					<td><span>联系人</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyContactPhone">
+					<td><span>联系人电话</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+
+				<tr data-value="" class="companyContactEmail">
+					<td><span>联系邮箱</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyBusinessPhone">
+					<td><span>商务电话</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyBankAccount">
+					<td><span>银行账户</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyBankName">
+					<td><span>开户行</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyTaxCode">
+					<td><span>税号</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyTaxCodePhone">
+					<td><span>税务电话</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyQQ">
+					<td><span>企业QQ</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+				<tr data-value="" class="companyWeixinCodeUrl">
+					<td><span>微信二维码</span></td>
+					<td><span class="value2"></span></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+
+
